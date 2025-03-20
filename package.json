@@ -1,0 +1,35 @@
+{
+  "name": "create-vue-express",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "CLI for creation yarn monorepo Vite Vue + Express.js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentynKovalskyi/create-vue-express.git"
+  },
+  "keywords": [
+    "CLI",
+    "Vue.js",
+    "Express.js",
+    "Monorepo",
+    "Create",
+    "CLI"
+  ],
+  "author": "Valentyn Kovalskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ValentynKovalskyi/create-vue-express/issues"
+  },
+  "bin": {
+    "create-vue-express": "./index.js"
+  },
+  "homepage": "https://github.com/ValentynKovalskyi/create-vue-express#readme",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "prompts": "^2.4.2"
+  }
+}
