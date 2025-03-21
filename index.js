@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+import chalk from "chalk";
 import prompts from "prompts";
 
 const result = await prompts([
@@ -16,12 +18,30 @@ const result = await prompts([
         ]
     },
     {
-        name: "addVuetify",
-        type: "select",
-        message: "What is your sex?",
+        name: "vuePlugins",
+        type: "multiselect",
+        message: "Choose Vue plugins",
         choices: [
-            { title: "Yes", value: true},
-            { title: "No", value: false}
+            { title: "Vue-Router", value: "router"},
+            { title: "Pinia State Manager", value: "pinia"},
+            { title: "Vuetify UI", value: "vuetify"},
+            { title: "I18n", value: "i18n"},
+        ]
+    },
+    {
+        name: "expressPlugins",
+        type: "multiselect",
+        message: "Choose Vue plugins",
+        choices: [
+            { title: "Helmet", value: "helmet"},
+            { title: "Morgan Logger", value: "morgan"},
+            { title: "Compression", value: "compression"},
         ]
     }
 ])
+
+
+
+
+
+console.log(chalk.greenBright.bold(JSON.stringify(result)))

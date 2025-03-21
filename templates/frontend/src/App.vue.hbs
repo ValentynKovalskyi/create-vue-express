@@ -1,0 +1,66 @@
+<script setup>
+import Message from '@/components/Message.vue'
+</script>
+
+<template>
+  <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="250" height="250" />
+    <div class="wrapper">
+      <Message messageText="You created Vue + Express Project"/>
+    </div>
+  </header>
+  <main>
+    <div class="panel">
+      <section>
+        <h2>General Configuration</h2>
+        <ul>
+          <li>TypeScript</li>
+          <li>Monorepo</li>
+          <li>ESLint</li>
+          <li>Prettier</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Frontend Plugins</h2>
+        <ul>
+          <li>Router</li>
+          <li>Pinia</li>
+          <li>Vuetify</li>
+          <li>I18n</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Server Plugins</h2>
+        <ul>
+          <li>Helmet</li>
+          <li>Morgan Logger</li>
+          <li>Compression</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</template>
+
+<style scoped>
+header {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.panel {
+  width: 100%;
+  border: 1px;
+  border-radius: 1em;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #585656;
+  filter: drop-shadow(2px 4px 4px rgb(41, 41, 41));
+}
+
+.panel li {
+  margin-bottom: 0.2em;
+}
+</style>

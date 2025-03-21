@@ -1,7 +1,7 @@
 {
   "name": "create-vue-express",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "CLI for creation yarn monorepo Vite Vue + Express.js project",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ValentynKovalskyi/create-vue-express#readme",
   "dependencies": {
+    "chalk": "^5.4.1",
     "handlebars": "^4.7.8",
     "prompts": "^2.4.2"
   }
